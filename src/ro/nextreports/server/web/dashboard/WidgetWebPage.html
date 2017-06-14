@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wicket="http://wicket.apache.org/" 
+      xml:lang="en" 
+      lang="en">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<!-- The viewport is the area in which the web page is drawn 
+			 Specify that the viewport width should exactly match the device screen width 
+		-->
+		<meta name="viewport" content="width=device-width" />
+		
+		<!-- Font awesome -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	
+		<!-- Bootstrap Base Style -->
+		<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+        
+		<link rel="stylesheet" type="text/css" media="screen" href="" wicket:id="cssPath"/>
+        <style type="text/css">           
+                      			
+			table.grid tbody td { 
+ 			   line-height: 18px !important;
+ 			   text-align: left; 	
+ 			   border-bottom: 1px solid #e4e4e4 !important;	
+ 			   border-left: 1px solid #e4e4e4 !important;	   
+			}          
+			
+			table {
+ 				font-size: 12px !important;
+			}  
+			
+			body {
+				background: #fff !important;
+				overflow: hidden !important;							 
+			}   						    
+			
+			.dragbox-content {
+				background: #fff;
+				min-height: 60px;		
+				margin: 5px;
+				line-height: 1.5em;
+				overflow: auto;
+			} 
+			
+			.drill-dragbox-content {
+			   background: #fff;
+				min-height: 60px;						
+				line-height: 1.5em;
+				overflow: auto;
+			}	
+			
+			.scroll {		
+				height:	100%;	
+				overflow: auto;
+			}	
+												        
+        </style>             
+		<script type="text/javascript" src="js/jquery.json-2.2.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</head>
+
+	<body class="nrs nrs-detach">
+	   <div wicket:id="widget" class="scroll"></div>
+	</body>
+</html>

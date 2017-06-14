@@ -1,0 +1,29 @@
+1 - Creato il repository su appsvil.localdomain git@appsvil.localdomain:itqreports/itqreports-server.git
+2 - git clone https://github.com/nextreports/nextreports-server.git
+3 - git remote add itqreports-server https://appsvil.localdomain:itqreports/itqreports-server.git
+4 - git flow init
+5 - git flow feature start release-1.0
+                Aggiunto i file 
+                               webapp/images/logo.png
+                               itqreport_resources/doc/install
+                               webapp/WEB-INF/weblogic.xml
+                Modificato i file
+                               src/ro/nextreports/server/web/NextServerApplication.properties
+                               src/ro/nextreports/server/web/security/LoginPage.html
+6 - git add .
+7 - git commit -m "release-1.0"
+8 - git flow feature finish release-1.0
+9 - git flow release start 'release-1.0'
+10 - git flow release finish 'release-1.0'
+11 - git push --all itqreports-server
+12 - git flow feature start release-1.1
+                Modificato i file
+							   src/ro/nextreports/server/web/NextServerApplication.properties
+							   build.xml  
+							   src/ro/nextreports/server/web/core/BasePage.html
+							   src/ro/nextreports/server/web/core/HomePage.html
+							   src/ro/nextreports/server/web/integration/IntegrationBasePage.html
+							   webapp/WEB-INF/weblogic.xml
+							   
+							   
+                               

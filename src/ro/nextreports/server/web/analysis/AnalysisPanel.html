@@ -1,0 +1,25 @@
+<wicket:panel>
+	<div class="toolbar_nav">
+		<img wicket:id="toggle" class="analysis-toggle" src="" alt="" /> <span wicket:id="title" class="analysis-title" />
+	</div>
+	<form wicket:id="submitForm" style="height: 100%; display: block;" action="">
+		<div class="analysisToolbar clearfix">
+			<ul class="topnav pull-left">
+				<li><a wicket:id="createColumns" wicket:message ="title:CreatePanel.create"><img class="left-image" src="images/create_column.png" alt=""> <span><wicket:message key="CreatePanel.create">[]</wicket:message></span></a></li>
+				<li><a wicket:id="selectColumns" wicket:message ="title:ColumnsPanel.select"> <img class="left-image" src="images/select.png" alt=""> <span><wicket:message key="ColumnsPanel.select">[]</wicket:message></span></a></li>
+				<li><a wicket:id="sortRows" wicket:message ="title:SortPanel.sort"> <img class="left-image" src="images/sort.png" alt=""> <span><wicket:message key="SortPanel.sort">[]</wicket:message></span></a></li>
+				<li><a wicket:id="filterRows" wicket:message ="title:FilterPanel.filter"> <img class="left-image" src="images/filter.png" alt=""> <span><wicket:message key="FilterPanel.filter">[]</wicket:message></span></a></li>
+				<li><a wicket:id="groupRows" wicket:message ="title:GroupPanel.group"> <img class="left-image" src="images/group_columns.png" alt=""> <span><wicket:message key="GroupPanel.group">[]</wicket:message></span></a></li>
+				<li><a wicket:id="paginate" wicket:message ="title:PaginatePanel.paginate"> <img class="left-image" src="images/paginate.png" alt=""> <span><wicket:message key="PaginatePanel.paginate">[]</wicket:message></span></a></li>
+			</ul>
+			<ul class="topnav pull-right">
+				<li><a wicket:id="xlsxExport" wicket:message ="title:Export.xls"> <img class="left-image" src="images/excel.gif" alt=""> <span><wicket:message key="Export.xls">[]</wicket:message></span></a></li>
+				<li><a wicket:id="freeze" wicket:message ="title:freeze" id="freeze"> <img class="left-image" src="images/analysis_freeze.png" alt=""> <span><wicket:message key="freeze">[]</wicket:message></span></a></li>
+				<li><a wicket:id="save" wicket:message ="title:save"> <img class="left-image" src="images/save_analysis.png" alt=""> <span><wicket:message key="save">[]</wicket:message></span></a></li>
+			</ul>
+		</div>
+		<div class="analysisPanel">
+			<div wicket:id="tablePanel"></div>
+		</div>
+	</form>
+</wicket:panel>

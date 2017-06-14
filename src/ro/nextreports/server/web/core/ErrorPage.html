@@ -1,0 +1,19 @@
+<wicket:extend>
+	<div class="error-container">
+		<div class="error-message">
+			<div class="error-image">
+				<i class="fa fa-warning fa-5x"></i>
+			</div>
+			<p class="error-title">
+				<wicket:message key="error.code"></wicket:message>
+				<span wicket:id="errorCode" />,
+				<wicket:message key="error.try"></wicket:message>!</p>
+			<p class="error-text">
+				<wicket:message key="error.description"></wicket:message>					
+			</p>
+			<div class="error-buttons">
+				<a wicket:id="home" class="btn btn-primary btn-lg"><wicket:message key="home"></wicket:message></a>
+			</div>
+		</div>
+	</div>
+</wicket:extend>

@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org/" xml:lang="en" lang="en">
+<head>
+	<title><wicket:message key="LoginPage.title">NextReports - Login</wicket:message></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+
+	<!-- Bootstrap Base Style -->
+	<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="" wicket:id="cssPath"/>	
+	
+	<link rel="SHORTCUT ICON" href="images/favicon.ico" /> 
+	
+	<script type="text/javascript" src="js/jquery.json-2.2.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body class="nrs">
+	<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+  		<tr>
+    		<td align="center" valign="middle">
+    		  <div id="wrapper">
+    		    <!-- header -->
+        		<div id="header" class="clearfix">
+          			<div class="left"> <img wicket:id="logoImage" class="logo" src="images/logo.png"/>
+            			<p class="text_logo text-shadow"><wicket:message key="LoginPage.description.general">[]</wicket:message></p>
+          			</div>
+	          		<div class="right"><img class="charts" src="images/charts.png"/></div>
+        		</div>
+        		
+        
+        		<!-- content -->
+        		<div id="content" class="clearfix">
+        			<!-- left -->
+          			
+            			<form wicket:id="loginForm" id="login-form" method="post">
+              				<fieldset>
+              					<span wicket:id="feedback" class="error">[]</span> 
+                				<label><wicket:message key="LoginPage.userName">User Name</wicket:message></label>              
+                				<input wicket:id="username" name="name" type="text">                
+                				<label><wicket:message key="LoginPage.password">Password</wicket:message></label>
+                				<input wicket:id="password" name="password" type="password">
+                				<label wicket:id="realmLabel">[]</label>
+                				<select wicket:id="realm" name="realm"/>      
+                				<input wicket:id="login" type="submit" class="button" wicket:message="value:LoginPage.login"/>
+                				<a wicket:id="forgot" href="#"><wicket:message key="LoginPage.forgot">Forgot password</wicket:message></a>
+              				</fieldset>
+            			</form>
+          			
+          			
+        		</div>
+                <!-- footer -->
+        		<div id="footer" class="clearfix">
+        			
+          			
+            			<p class="copyright"><wicket:message key="copyright">Copyright</wicket:message> ©2016 Advantage Software Factory</p>
+          			
+        		</div>
+      		  </div>      
+      		</td>
+  		</tr>
+	</table>
+</body>
+</html>

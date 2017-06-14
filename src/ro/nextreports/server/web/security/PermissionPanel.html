@@ -1,0 +1,13 @@
+<wicket:panel>
+	<div class="form-group">
+		<label><wicket:message key="PermissionPanel.title">Permissions</wicket:message></label>
+       	<label class="checkbox-inline"><input wicket:id="all" type="checkbox" class="nrs"/><span class="lbl"></span> <wicket:message key="PermissionPanel.all">Check All</wicket:message></label>
+	</div>
+    <div class="form-group">
+       	<div class="checkbox"><label><input wicket:id="read" class="nrs" type="checkbox"/><span class="lbl"></span> <wicket:message key="PermissionPanel.read">[R] Read</wicket:message></label></div>
+       	<div class="checkbox"><label><input wicket:id="execute" class="nrs" type="checkbox"/><span class="lbl"></span> <wicket:message key="PermissionPanel.execute">[X] Execute</wicket:message></label></div>
+       	<div class="checkbox"><label><input wicket:id="write" class="nrs" type="checkbox"/><span class="lbl"></span> <wicket:message key="PermissionPanel.write">[W] Write</wicket:message></label></div>
+       	<div class="checkbox"><label><input wicket:id="delete" class="nrs" type="checkbox"/><span class="lbl"></span> <wicket:message key="PermissionPanel.delete">[D] Delete</wicket:message></label></div>
+       	<div class="checkbox"><label><input wicket:id="security" class="nrs" type="checkbox"/><span class="lbl"></span> <wicket:message key="PermissionPanel.security">[S] Security</wicket:message></label></div>
+	</div>
+</wicket:panel>

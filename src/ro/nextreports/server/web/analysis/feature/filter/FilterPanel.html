@@ -1,0 +1,29 @@
+<wicket:panel>	
+	<table>     
+		 <tr>                	
+              <td class="td-label"><img wicket:id="infoImage" style="padding: 0px !important;"/></td>
+              <td></td>
+         </tr>        
+         <tr>                	
+              <td class="td-label"><label wicket:id="column"/></td>
+              <td><select wicket:id="columnChoice" class="form-control input-xs"/></td>
+         </tr>     
+         <tr>                	
+              <td class="td-label"><label wicket:id="operator"/></td>
+              <td><select wicket:id="operatorChoice" class="form-control input-xs"/></td>
+         </tr>   
+         <tr>                	
+              <td class="td-label"><label wicket:id="value"/></td>
+              <td><input wicket:id="valueText" class="form-control input-xs" type="text" size="45"/></td>
+         </tr>   
+         <tr>
+         	<td><a wicket:id="addLink" class="btn btn-primary btn-xs"><label wicket:id="addMessage"/></a></td>
+         </tr>     
+    </table>   
+ 	
+    <div class="analysisTableContainer">
+       	<table wicket:id="table" class="grid actions-grid"></table>
+    </div>    
+           
+    <div wicket:id="info" class="analysisInfo analysisSeparator"/>
+</wicket:panel>

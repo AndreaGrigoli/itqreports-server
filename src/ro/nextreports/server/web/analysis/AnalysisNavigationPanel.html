@@ -1,0 +1,29 @@
+<wicket:panel>
+
+		<div class="toolbar_nav">		  
+    		<a wicket:id="addAnalysis" class="btn btn-primary btn-xs">
+    			<i class="fa fa-plus"></i>
+    			<wicket:message key="AnalysisNavigationPanel.add">Add</wicket:message>
+    		</a>
+    	</div> 	
+    	<div wicket:id="navigation" class="analysisNavigation">
+      		<table class="actions-grid">
+        		<tr wicket:id="analysisList">                         			
+            		<td class="actions-col">
+            			<div wicket:id="actions"></div>
+            		</td>               		 
+            		<td>
+            			<div wicket:id="analysis"></div>
+            		</td>        
+        		</tr>
+       		</table> 
+    	</div>
+    
+    <wicket:fragment wicket:id="tab">
+		<a href="#" wicket:id="titleLink">
+			<img wicket:id="titleImage" class="left-image"></img>
+			<span wicket:id="title"></span>
+		</a>				 		                         
+    </wicket:fragment>
+</wicket:panel>
+    

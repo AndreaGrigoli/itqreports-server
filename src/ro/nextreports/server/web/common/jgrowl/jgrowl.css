@@ -1,0 +1,21 @@
+div.jGrowl div.jgrowl-ERROR {
+    background: #BF0B0B;
+}
+
+div.jGrowl div.jgrowl-WARNING {
+    background: orange;
+    color: black;
+}
+
+div.jGrowl div.jgrowl-INFO {
+    background: #0A6337;
+    color: white;    
+}
+
+div.jGrowl div.jgrowl-INFO a {
+	color: white !important;
+}
+
+div.jGrowl div.jgrowl-INFO a.go {
+	color: #FFCC00 !important;
+}
