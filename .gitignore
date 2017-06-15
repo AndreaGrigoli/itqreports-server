@@ -3,8 +3,7 @@ target/
 .project
 
 /src/ro/nextreports/server/ReleaseInfo.java
-ivy-lib/
-ivy-report/
+
 
 # CVS legacy #
 CVS/
@@ -13,7 +12,6 @@ analytics-data
 data/
 dist/
 artifacts/
-lib/
 logs/
 reports/
 .idea/
